@@ -12,9 +12,9 @@ local laws. It grew 4 plants, but unfortunately only one was able to grow fully.
 a system called "deep water" hydroponics, which is were the roots are left to soak in a nutrient
 solution continuously.
 Grow tent 1.0 had the following problems that ultimately led to a reduced and sickly harvest:
-1.      The roots were constantly at risk of developing root rot, this killed 2 plants.
-2.      There was not enough nutrient, this caused the living plant to be very small and sickly.
-3.      The root rot allowed for many diseases to fester, this led to 1 other plant to die.
+1. The roots were constantly at risk of developing root rot, this killed 2 plants.
+2. There was not enough nutrient, this caused the living plant to be very small and sickly.
+3. The root rot allowed for many diseases to fester, this led to 1 other plant to die.
 
 Grow tent 1.1 tries to solve these problems by addressing the major problems of root rot and 
 nutrient deficiencies.
