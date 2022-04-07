@@ -5,7 +5,6 @@
 ###################
 import sys
 import time
-import datetime
 import subprocess
 
 ##########################
@@ -18,7 +17,8 @@ import subprocess
 #PH
 #max_water_level
 #current_bucket_ID
-pumping_time = 300 #allows the pump to run for 5 minutes
+pumping_time = 300 # allows the pump to run for 5 minutes
+soak_time = 900 # allow the roots to soak for about 15 minutes
 
 #########################
 ###  Board variables  ###
@@ -42,8 +42,10 @@ subprocess.call('./off.sh', shell=True)
 while True: # Enter infinite loop
 	for bucket in range(len(on)): # Enter bucket cycle
 		# Turn on the buckets in order
-		subprocess.call(on[bucket])
+		subprocess.call(on[bucket], shell=True)
 		# Sleep for a predetermined amount of time
 		time.sleep(pumping_time)
 		# Turn off bucket after the predetermined amount of time
-		subprocess.call(off[bucket])
+		subprocess.call(off[bucket], shell=True)
+		# Allow for the roots to properly soak
+		time.sleep(soak_time - pumping_time)
